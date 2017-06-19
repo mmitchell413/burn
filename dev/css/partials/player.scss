@@ -1,0 +1,55 @@
+.player{
+  width:100%;
+  position:relative;
+
+  .player-art{
+    img{
+      width:100%;
+    }
+    .player-title{
+      position:absolute;
+      top:20px;
+      left:20px;
+      color:$font-color-light;
+    }
+  }
+
+
+  .player-bar{
+    width: 100%;
+    height:5px;
+    .player-bar-complete, .player-bar-left{
+      height:100%;
+      box-sizing:border-box;
+      display:inline-block;
+      float:left;
+    }
+    .player-bar-complete{
+      background:$secondary-color;
+      width:50%;
+    }
+    .player-bar-left{
+      background: $bg-color-light;
+      width:50%;
+    }
+  }
+
+
+  .player-controls{
+    background: $primary-color;
+    width:100%;
+    height:150px;
+    .player-volume{
+
+    }
+    .player-rw{
+
+    }
+    .player-play-pause{
+
+    }
+    .player-ff{
+
+    }
+  }
+}

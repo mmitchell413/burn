@@ -1,0 +1,35 @@
+body{
+  color:$font-color;
+}
+
+main, header{
+  width:100%;
+  overflow:hidden;
+}
+
+header{
+
+}
+
+main{
+  section{
+    padding: 2*$grid-subdivision 0px;
+    &:nth-child(2n+1){
+      background: $bg-color-light;
+    }
+    &:nth-child(2n){
+      background: $bg-color-dark;
+    }
+  }
+}
+
+.container{
+  display:block;
+  overflow:hidden;
+  width:100%;
+  max-width: $max-body-width;
+  margin:0 auto;
+  @media screen and (max-width: $desktop-sm){
+    padding: 0 $grid-subdivision;
+  }
+}

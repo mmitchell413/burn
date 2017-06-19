@@ -1,0 +1,57 @@
+@mixin body-font($font-size){
+  font-family: 'Lato', sans-serif;
+  font-size: $font-size;
+}
+@mixin header-font($font-size){
+  font-family: "dolce", sans-serif;
+  font-size: $font-size;
+}
+@mixin header-font-light($font-size){
+  font-family: "dolce-light", sans-serif;
+  font-size: $font-size;
+}
+@mixin header-font-heavy($font-size){
+  font-family: "dolce-heavy", sans-serif;
+  font-size: $font-size;
+}
+
+@font-face{
+  font-family:dolce;
+  src: url('../fonts/Dolce Vita.ttf');
+}
+@font-face{
+  font-family:dolce-light;
+  src: url('../fonts/Dolce Vita Light.ttf');
+}
+@font-face{
+  font-family:dolce-heavy;
+  src: url('../fonts/Dolce Vita Heavy Bold.ttf');
+}
+
+h3{
+  text-align:center;
+  color: $primary-color;
+  @include header-font(48px);
+  &:after{
+    content: '';
+    display:block;
+    margin:15px auto 45px auto;
+    width: 2 * $grid-subdivision;
+    height:2px;
+    background-color:$primary-color;
+  }
+}
+
+a, p, li, blockquote, code, input{
+  @include body-font(20px);
+}
+p{
+  margin: 0 0 20px 0;
+  line-height:32px;
+  &:last-child{
+    margin: 0 0 0 0;
+  }
+}
+a{
+  text-decoration:none;
+}

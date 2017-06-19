@@ -1,0 +1,19 @@
+nav.main{
+  text-align:left;
+  ul{
+    li{
+      display:inline-block;
+      margin: 0 115px 0 0;
+      padding: $grid-subdivision 0;
+      a{
+        font-size:20px;
+        color: $font-color-light;
+        padding: $grid-subdivision 0;
+        @include transition(.3s);
+        &:hover{
+          color: $font-color-accent;
+        }
+      }
+    }
+  }
+}

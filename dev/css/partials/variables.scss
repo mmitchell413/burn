@@ -1,0 +1,19 @@
+$primary-color: #26393f;
+$primary-color-dark: #1b2a30;
+$secondary-color: #e4bc02;
+$bg-color-light: #d1d8e9;
+$bg-color-dark: #bfc7dc;
+
+//font colors
+$font-color: #5e6167;
+$font-color-light: $bg-color-light;
+$font-color-accent: $secondary-color;
+
+//footer colors
+$footer-color: $primary-color;
+$footer-color-dark: $primary-color-dark;
+
+$grid-subdivision: 48px;
+$max-body-width: $grid-subdivision * 28;
+
+$desktop-sm: $max-body-width + (2*$grid-subdivision);

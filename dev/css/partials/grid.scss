@@ -1,0 +1,22 @@
+$gutter-width: $grid-subdivision;
+
+.row{
+  margin: 0px (-$gutter-width);
+  display:block;
+  overflow:hidden;
+}
+
+.col{
+  padding: 0 $gutter-width;
+  float:left;
+  box-sizing:border-box;
+}
+.col-100{
+  width:100%;
+}
+.col-50{
+  width:50%;
+}
+.col-25{
+  width:25%;
+}
