@@ -25,7 +25,7 @@
         </nav>
       </div>
       <div>
-        <h1>Sunshine Serenade</h1>
+        <h1>The Sunshine Serenade</h1>
         <hr />
         <h2>Burn</h2>
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -69,7 +69,19 @@
             <h3>About</h3>
           </div>
           <div class="col col-50">
+            <audio id="player" loop="true" preload="true">
+              <source src="audio/audio1.wav" type="audio/wav" title="Audio 1"/>
+            </audio>
+
             <div class="player">
+              <ul id='playlist'>
+                <li class='active'>
+                  <a href="audio/audio1.wav" title="Audio 1">Audio 1</a>
+                </li>
+                <li>
+                  <a href="audio/audio2.wav" title="Audio 2">Audio 2</a>
+                </li>
+              </ul>
               <div class="player-art">
                 <p class="player-title">
                   You Won't Go Far - Matt Mitchell
@@ -84,9 +96,26 @@
                 <div class="player-volume">
                   <div class="player-volume-slider"></div>
                 </div>
-                <div class="player-rw"></div>
-                <div class="player-play-pause"></div>
-                <div class="player-ff"></div>
+                <div class="player-rw player-button">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  	 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                  <polygon id="XMLID_2_" class="st0" points="50,12.5 25,25 50,37.5 "/>
+                  <polygon id="XMLID_1_" class="st0" points="25,12.5 0,25 25,37.5 "/>
+                  </svg>
+                  </div>
+                <div class="player-play-pause player-button">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  	 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                  <polygon id="XMLID_2_" class="st0" points="0,0 50,25 0,50 "/>
+                  </svg>
+                </div>
+                <div class="player-ff player-button">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  	 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                  <polygon id="XMLID_2_" class="st0" points="0,12.5 25,25 0,37.5 "/>
+                  <polygon id="XMLID_1_" class="st0" points="25,12.5 50,25 25,37.5 "/>
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
@@ -100,5 +129,8 @@
         </div>
       </div>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/production.js"></script>
   </body>
 </html>

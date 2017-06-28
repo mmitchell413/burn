@@ -38,6 +38,3 @@ $('.player-play-pause').click(function(e){
   }
 
 });
-
-
- 
