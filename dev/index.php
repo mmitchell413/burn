@@ -89,6 +89,9 @@
                 <img src="img/alb-art.jpg" />
               </div>
               <div class="player-bar">
+                <div class="tooltip">
+                  <span class="time-pointer">Test</span> / <span class="time-total">Test</span>
+                </div>
                 <div class="player-bar-complete"></div>
                 <div class="player-bar-left"></div>
               </div>

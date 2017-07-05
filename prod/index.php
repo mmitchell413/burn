@@ -69,11 +69,19 @@
             <h3>About</h3>
           </div>
           <div class="col col-50">
-            <audio id="player" loop="true">
+            <audio id="player" loop="true" preload="true">
               <source src="audio/audio1.wav" type="audio/wav" title="Audio 1"/>
-              <source src="audio/audio2.wav" type="audio/wav" title="Audio 2" />
             </audio>
+
             <div class="player">
+              <ul id='playlist'>
+                <li class='active'>
+                  <a href="audio/audio1.wav" title="Audio 1">Audio 1</a>
+                </li>
+                <li>
+                  <a href="audio/audio2.wav" title="Audio 2">Audio 2</a>
+                </li>
+              </ul>
               <div class="player-art">
                 <p class="player-title">
                   You Won't Go Far - Matt Mitchell
@@ -81,6 +89,9 @@
                 <img src="img/alb-art.jpg" />
               </div>
               <div class="player-bar">
+                <div class="tooltip">
+                  <span class="time-pointer">Test</span> / <span class="time-total">Test</span>
+                </div>
                 <div class="player-bar-complete"></div>
                 <div class="player-bar-left"></div>
               </div>

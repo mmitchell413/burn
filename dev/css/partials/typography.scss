@@ -42,7 +42,7 @@ h3{
   }
 }
 
-a, p, li, blockquote, code, input{
+a, p, li, blockquote, code, input, span{
   @include body-font(20px);
 }
 p{
