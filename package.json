@@ -1,24 +1,24 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "portfolio site project json file",
+  "name": "burn",
+  "version": "0.0.2",
+  "description": "project for Sunshine Serenade album, Burn",
   "main": "index.js",
   "scripts": {
     "test": "npm install grunt --portfolio"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mmitchell413/portfolio.git"
+    "url": "git+https://github.com/mmitchell413/burn.git"
   },
   "keywords": [
     "portfolio"
   ],
   "author": "Matt Mitchell",
-  "license": "none",
+  "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/mmitchell413/portfolio/issues"
+    "url": "https://github.com/mmitchell413/burn/issues"
   },
-  "homepage": "https://github.com/mmitchell413/portfolio",
+  "homepage": "https://github.com/mmitchell413/burn",
   "dependencies": {
     "bourbon": "^4.2.6",
     "grunt": "^0.4.5",
@@ -27,8 +27,10 @@
   "devDependencies": {
     "eyeglass": "^0.8.2",
     "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-uglify": "^0.11.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-postcss": "^0.7.1",
