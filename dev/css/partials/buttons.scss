@@ -1,0 +1,25 @@
+.btn{
+  border:3px solid $primary-color;
+  border-radius:5px;
+  display:inline-block;
+  padding: .5*$grid-subdivision $grid-subdivision;
+  @include header-font(26px);
+  @include transition('.3s');
+  &.btn-primary{
+    color:$font-color-light;
+    background: $primary-color;
+    border:3px solid $primary-color;
+    border-radius:5px;
+    &:hover{
+      color:$primary-color;
+      background: $secondary-color;
+      border: 3px solid $secondary-color;
+    }
+  }
+  &.btn-secondary{
+    color:$primary-color;
+    &:hover{
+      border: 3px solid $secondary-color;
+    }
+  }
+}

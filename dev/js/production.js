@@ -48,12 +48,12 @@ setInterval(function(){
 $('.player-play-pause').click(function(e){
   e.preventDefault();
   if(player.paused){
-    console.log("playing");
     //TODO change icon to pause icon
+    $(".player-play-pause").html('<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve"><g id="Layer_2"><rect x="11.5" y="7.2" width="8.3" height="35.7"/><rect x="30.2" y="7.2" width="8.3" height="35.7"/></g>');
     player.play();
   }else{
-    console.log("paused");
     //TODO change icon to play icon
+    $('.player-play-pause').html('<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve"><polygon id="XMLID_2_" points="11.3,7.2 47,25 11.3,42.8 "/></svg>');
     player.pause();
   }
 });
@@ -85,11 +85,14 @@ $('.player-rw').click(function(e){
 
 // run new song
 function run(link, player){
+    var pause = player.paused;
     player.src = link.attr('href');
     par = link.parent();
     par.addClass('active').siblings().removeClass('active');
     player.load();
-    player.play();
+    if(!pause){
+      player.play();
+    }
     tooltipDuration();
     // Sets title of player to current track
     $('.player-title').html(link.attr('title'));
@@ -104,9 +107,27 @@ function tooltipDuration(){
 $('.player-bar').click(function(event){
   var offset = $('.player-bar').offset();
   var percentClick = Math.floor((event.clientX-offset.left) / this.offsetWidth * 100);
-  console.log(percentClick);
   player.currentTime = player.duration * (percentClick/100);
 });
+
+// TODO update tooltip with hover time
+$('.player-bar').on('mousemove', function(event){
+    var offset = $('.player-bar').offset();
+    var percentHover = (event.pageX-offset.left) / this.offsetWidth * 100;
+    $('.handle').css('left', percentHover + "%");
+});
+
+// show/hide slider handle on hover
+$('.player-bar').hover(
+  function(event){
+    $('.handle').show();
+    $('.tooltip').show();
+  },
+  function(event){
+    $('.handle').hide();
+    $('.tooltip').hide();
+  }
+);
 
 //convert seconds to mm:ss format
 function songLength(len){
