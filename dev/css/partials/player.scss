@@ -65,7 +65,8 @@
   .player-controls{
     background: $primary-color;
     width:100%;
-    overflow:hidden;
+    overflow:visible;
+    height:106px;
     margin:0 auto;
     .player-button{
       width: 1.75*$grid-subdivision;
@@ -96,7 +97,32 @@
       }
     }
     .player-volume{
-
+      //placeholder styles until icon is acquired TODO get icon
+        width:50px;
+        height:50px;
+        background: #fff;
+      //
+      display:inline-block;
+      float:left;
+      position:relative;
+      overflow:visible;
+      .player-volume-slider{
+        width:30px;
+        height:150px;
+        position:absolute;
+        background: $primary-color;
+        top:-120px;
+        left:10px;
+        border-radius: 15px;
+        z-index:3;
+        display:none;
+        &:hover{
+          display:block;
+        }
+      }
+      &:hover .player-volume-slider{
+          display:block;
+      }
     }
     .player-rw{
 
