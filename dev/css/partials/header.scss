@@ -11,10 +11,22 @@ header{
   h1{
     color:$font-color-light;
     @include header-font-light(64px);
+    @media screen and (max-width:$tablet){
+      @include header-font-light(48px);
+    }
+    @media screen and (max-width:$phone){
+      @include header-font-light(32px);
+    }
   }
   h2{
     color:$font-color-accent;
     @include header-font(164px);
+    @media screen and (max-width:$tablet){
+      @include header-font-light(123px);
+    }
+    @media screen and (max-width:$phone){
+      @include header-font-light(82px);
+    }
   }
   hr{
     width:50%;

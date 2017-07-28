@@ -1,0 +1,27 @@
+footer{
+  .footer-upper{
+    padding: $grid-subdivision 0;
+    background:$primary-color;
+    .sitemap{
+      ul{
+        li{
+          display:inline-block;
+          margin: 0 $grid-subdivision 0 0;
+          a{
+            color:$font-color-light;
+            text-decoration:none;
+          }
+          &:last-child{
+            margin:0;
+          }
+        }
+      }
+    }
+    .social{
+
+    }
+  }
+  .footer-lower{
+    background: $primary-color-dark;
+  }
+}

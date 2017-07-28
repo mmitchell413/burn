@@ -1,6 +1,7 @@
 $primary-color: #26393f;
 $primary-color-dark: #1b2a30;
 $secondary-color: #e4bc02;
+$secondary-color-dark: #d0ad09;
 $bg-color-light: #d1d8e9;
 $bg-color-dark: #bfc7dc;
 
@@ -16,4 +17,10 @@ $footer-color-dark: $primary-color-dark;
 $grid-subdivision: 48px;
 $max-body-width: $grid-subdivision * 28;
 
+$paragraph-margin: 20px;
+
+// TODO set responsive breakpoints
+$desktop-lg: 0;
 $desktop-sm: $max-body-width + (2*$grid-subdivision);
+$tablet: 20 * $grid-subdivision;
+$phone: 10 * $grid-subdivision;
