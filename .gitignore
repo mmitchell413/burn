@@ -37,6 +37,9 @@ node_modules/
 jspm_packages/
 .sass-cache/
 
+# Prod folder will be rebuilt on Grunt run
+prod/
+
 # Typescript v1 declaration files
 typings/
 
