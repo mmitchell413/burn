@@ -1,25 +1,32 @@
 .btn{
   border:3px solid $primary-color;
   border-radius:5px;
+  position:relative;
+  top:0;
+  overflow:visible;
   display:inline-block;
   padding: .5*$grid-subdivision $grid-subdivision;
   @include header-font(26px);
-  @include transition('.3s');
+  @include transition('.15s');
   &.btn-primary{
     color:$font-color-light;
     background: $primary-color;
     border:3px solid $primary-color;
     border-radius:5px;
     &:hover{
-      color:$primary-color;
-      background: $secondary-color;
-      border: 3px solid $secondary-color;
+      background: $primary-color-hover;
+      border: 3px solid $primary-color-hover;
     }
   }
   &.btn-secondary{
     color:$primary-color;
     &:hover{
-      border: 3px solid $secondary-color;
+      color:$primary-color-hover;
+      border: 3px solid $primary-color-hover;
     }
+  }
+  &:hover{
+    top:-3px;
+    box-shadow: 0px 3px 3px rgba(0,0,0,.3);
   }
 }

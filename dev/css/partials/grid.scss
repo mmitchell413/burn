@@ -3,7 +3,7 @@ $gutter-width: $grid-subdivision;
 .row{
   margin: 0px (-$gutter-width);
   display:block;
-  overflow:hidden;
+  overflow:visible;
 }
 
 .col{
