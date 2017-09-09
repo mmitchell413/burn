@@ -29,7 +29,7 @@
         <hr />
         <h2>Burn</h2>
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-        	 viewBox="0 0 1000 100" style="background-color:#d1d8e9; height:auto; width:100%;">
+        	 viewBox="0 0 1000 100" style="background-color:#f8faff; height:auto; width:100%;">
         <style type="text/css">
         	.st0{fill:#26393F; height:100px; width:100%;}
         </style>
