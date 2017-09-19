@@ -1,5 +1,9 @@
 @mixin body-font($font-size){
-  font-family: 'Lato', sans-serif;
+  font-family: 'lato-light', sans-serif;
+  font-size: $font-size;
+}
+@mixin body-font-italic($font-size){
+  font-family: 'lato-lightitalic', sans-serif;
   font-size: $font-size;
 }
 @mixin header-font($font-size){
@@ -27,6 +31,18 @@
   font-family:dolce-heavy;
   src: url('../fonts/Dolce Vita Heavy Bold.ttf');
 }
+@font-face{
+  font-family:lato;
+  src: url('../fonts/Lato-Regular.ttf');
+}
+@font-face{
+  font-family:lato-light;
+  src: url('../fonts/Lato-Light.ttf');
+}
+@font-face{
+  font-family:lato-lightitalic;
+  src: url('../fonts/Lato-LightItalic.ttf');
+}
 
 h3{
   text-align:center;
@@ -47,11 +63,16 @@ a, p, li, blockquote, code, input, span{
 }
 p{
   margin: 0 0 $paragraph-margin 0;
-  line-height:32px;
+  line-height:42px;
   &:last-child{
     margin: 0 0 0 0;
   }
 }
 a{
   text-decoration:none;
+  color:$link-color;
+  @include transition(.2s);
+}
+a:hover{
+  color:$link-color-hover;
 }

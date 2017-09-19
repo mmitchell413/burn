@@ -118,7 +118,10 @@ $('.player-bar').click(function(event){
 // TODO update tooltip with hover time
 $('.player-bar').on('mousemove', function(event){
     var offset = $('.player-bar').offset();
-    var percentHover = (event.pageX-offset.left) / this.offsetWidth * 100;
+    var percentHover = ((event.pageX-offset.left) / this.offsetWidth * 100) - 2;
+    if(percentHover > 100){
+      percentHover = 100;
+    }
     $('.handle').css('left', percentHover + "%");
 });
 
