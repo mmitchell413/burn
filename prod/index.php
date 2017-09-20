@@ -43,7 +43,7 @@
             </div>
             <div class="col col-1 center">
               <p>The Sunshine Serenade is a project led by artist Matt Mitchell. Based in Dallas, Texas, The Sunshine Serenade is set to debut their first album &#8212; Burn &#8212; in Summer 2018. Mixing elements of blues, rock and roll, folk, and jazz, The Sunshine Serenade developed a unique soundscape through years of experimentation. </p>
-              <p>Stay tuned in to the band here and on <a href="https://soundcloud.com/thesunshineserenade" target="_blank">Soundcloud</a> for exclusive sneak peaks of the upcoming album. </p>
+              <p>Stay tuned in to the band here and on <a href="https://soundcloud.com/thesunshineserenade" target="_blank">Soundcloud</a> for exclusive sneak peaks of the upcoming album as well as insight into the writing and recording process. </p>
             </div>
           </div>
         </div>

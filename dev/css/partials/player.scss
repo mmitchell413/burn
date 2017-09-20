@@ -134,15 +134,15 @@
         background: $primary-color;
         top:-140px;
         left:10px;
-        border-radius: 15px;
+        //border-radius: 15px;
         z-index:3;
         display:none;
         box-shadow: 0 3px 6px rgba(0,0,0,.3);
         .player-volume-slider-highlight{
-          background:$secondary-color;
+          background:$link-color;
           display:block;
           height:100%;
-          border-radius:10px;
+          //border-radius:10px;
         }
         &:hover{
           display:block;

@@ -138,17 +138,30 @@ $('.player-bar').hover(
 );
 
 //get volume percentage based on user click location
-$('.player-volume-slider').on('click', function(event){
+var mouseDown = false;
+$('.player-volume-slider-highlight').mousedown(function(){
+  mouseDown = true;
   var offset = $('.player-volume-slider').offset();
-  var percentClick = 1 - ((event.pageY-offset.top) / this.offsetHeight);
-  console.log(percentClick);
+  var percentClick = (1 - ((event.pageY-offset.top) / this.offsetHeight)) + .0542;
   changeVolume(percentClick);
+})
+
+$('.player-volume-slider-highlight').mousemove(function(){
+  if(mouseDown){
+    var offset = $('.player-volume-slider').offset();
+    var percentClick = (1 - ((event.pageY-offset.top) / this.offsetHeight)) + .0542;
+    changeVolume(percentClick);
+  }
+})
+
+$('.player-volume-slider-highlight').mouseup(function(){
+  mouseDown = false;
 });
 
 //volume slider change volume
 function changeVolume(vol){
   player.volume = vol;
-  console.log(player.volume);
+  $('.player-volume-slider-highlight').css('background', 'linear-gradient(0deg, #62a7bd ' + (vol*100) + '%, white '+(vol*100)+'%, white)');
 }
 
 //TODO volume slider percentage highlight change
