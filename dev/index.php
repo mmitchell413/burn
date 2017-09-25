@@ -13,11 +13,10 @@
       <div class="container">
         <nav class="main">
           <ul>
-            <li><a href='#'>Home</a></li>
-            <li><a href='#'>Listen</a></li>
-            <li><a href='#'>Tour</a></li>
-            <li><a href='#'>About</a></li>
-            <li><a href='#'>Blog</a></li>
+            <li><a href='#listen'>Listen</a></li>
+            <li><a href='#tour'>Tour</a></li>
+            <li><a href='#about'>About</a></li>
+            <li><a href='#blog'>Blog</a></li>
           </ul>
         </nav>
       </div>
@@ -49,11 +48,14 @@
         </div>
       </div>
     </section>
+
+    <!-- listen section -->
+    <a id='listen' />
     <section>
       <div class="container">
         <div class="row">
           <div class="col col-1">
-            <h3>About</h3>
+            <h3>Listen</h3>
           </div>
         </div>
         <div class="row">
@@ -99,25 +101,29 @@
                     <div class="player-volume-slider-highlight"></div>
                   </div>
                 </div>
-                <div class="player-rw player-button">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  	 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
-                  <polygon id="XMLID_2_" points="50,12.5 25,25 50,37.5 "/>
-                  <polygon id="XMLID_1_" points="25,12.5 0,25 25,37.5 "/>
-                  </svg>
+                <div class="player-buttons">
+                  <div class="center">
+                    <div class="player-rw player-button">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      	 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                      <polygon id="XMLID_2_" points="50,12.5 25,25 50,37.5 "/>
+                      <polygon id="XMLID_1_" points="25,12.5 0,25 25,37.5 "/>
+                      </svg>
+                      </div>
+                    <div class="player-play-pause player-button">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      	 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                      <polygon id="XMLID_2_" points="11.3,7.2 47,25 11.3,42.8 "/>
+                      </svg>
+                    </div>
+                    <div class="player-ff player-button">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      	 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                      <polygon id="XMLID_2_" points="0,12.5 25,25 0,37.5 "/>
+                      <polygon id="XMLID_1_" points="25,12.5 50,25 25,37.5 "/>
+                      </svg>
+                    </div>
                   </div>
-                <div class="player-play-pause player-button">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  	 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
-                  <polygon id="XMLID_2_" points="11.3,7.2 47,25 11.3,42.8 "/>
-                  </svg>
-                </div>
-                <div class="player-ff player-button">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  	 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
-                  <polygon id="XMLID_2_" points="0,12.5 25,25 0,37.5 "/>
-                  <polygon id="XMLID_1_" points="25,12.5 50,25 25,37.5 "/>
-                  </svg>
                 </div>
                 <!-- TODO song information pop-up -->
               </div>
@@ -136,6 +142,38 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <!-- tour section -->
+    <a id='tour' />
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col col-1 center">
+            <h3>Tour</h3>
+            <p>The Sunshine Serenade currently has no tour dates. Check back later for updated information or sign up for our newsletter to receive the latest news.</p>
+            <a class="btn btn-primary" href="#">Sign Up for Newsletter</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section -->
+    <a id='about'></a>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col col-1">
+            <h3>About</h3>
+          </div>
+          <div class="col col-2">
+            <p>The Sunshine Serenade is the brainchild of artist Matt Mitchell, based in Dallas, TX. He is currently writing and recording his first studio album - <i>Burn</i> - due out in the Summer of 2018.</p>
+            <p>Combining elements of blues, rock and roll, jazz, and folk, The Sunshine Serenade tapped into a unique sound. He is heavily influenced by artists such as Jimi Hendrix, Modest Mouse, The Red Hot Chili Peppers, and Pink Floyd.</p>
+            <p>Matt has been writing and creating music for nearly thirteen years, starting guitar at the age of 12 after his grandfather gave him a Johnson acoustic guitar as a gift.</p>
+          </div>
+        </div>
+      </div>
+    </section>
     </main>
     <footer>
       <div class="footer-upper">

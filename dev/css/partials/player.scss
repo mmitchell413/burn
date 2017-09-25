@@ -78,12 +78,14 @@
     overflow:visible;
     height:60px;
     margin:0 auto;
+    .player-buttons{
+      margin:0 auto;
+    }
     .player-button{
       width: 1*$grid-subdivision;
       height: 1*$grid-subdivision;
       margin: .12*$grid-subdivision;
       display:inline-block;
-      float:left;
       border-radius:50%;
       @include transition(.2s);
       svg{
@@ -113,7 +115,7 @@
       float:left;
       width:50px;
       height:50px;
-      position:relative;
+      position:absolute;
       overflow:visible;
       svg{
         margin:13px;

@@ -14,10 +14,10 @@ header{
 main{
   section{
     padding: 2*$grid-subdivision 0px;
-    &:nth-child(2n+1){
+    &:nth-of-type(2n+1){
       background: $bg-color-light;
     }
-    &:nth-child(2n){
+    &:nth-of-type(2n){
       background: $bg-color-dark;
     }
   }
