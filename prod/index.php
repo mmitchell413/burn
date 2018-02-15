@@ -130,7 +130,7 @@
             </div>
           </div>
           <div class="col col-2-3">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consequat, tellus nec tincidunt laoreet, libero quam finibus elit, consectetur malesuada quam sapien nec turpis. Aenean aliquam nisl et tincidunt venenatis. In molestie massa sed massa mollis, iaculis finibus erat pulvinar. Aliquam laoreet gravida neque sed vehicula. Nunc elementum, tellus eu euismod ultricies, orci odio mollis nibh, non posuere nunc nunc a mauris. Nullam at gravida libero. Nam neque lacus, sodales et ultrices quis, malesuada eu enim. Quisque nec urna vitae eros dapibus rutrum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus sapien at orci volutpat maximus. Etiam vel dolor mauris. Etiam lacinia facilisis tortor eget feugiat. Praesent condimentum suscipit tellus sed pretium. Ut ac sodales neque. Morbi sit amet semper nisl.</p>
+            <p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam consequat, tellus nec tincidunt laoreet, libero quam finibus elit, consectetur malesuada quam sapien nec turpis. Aenean aliquam nisl et tincidunt venenatis. In molestie massa sed massa mollis, iaculis finibus erat pulvinar. Aliquam laoreet gravida neque sed vehicula. Nunc elementum, tellus eu euismod ultricies, orci odio mollis nibh, non posuere nunc nunc a mauris. Nullam at gravida libero. Nam neque lacus, sodales et ultrices quis, malesuada eu enim. Quisque nec urna vitae eros dapibus rutrum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus sapien at orci volutpat maximus. Etiam vel dolor mauris. Etiam lacinia facilisis tortor eget feugiat. Praesent condimentum suscipit tellus sed pretium. Ut ac sodales neque. Morbi sit amet semper nisl.</p>
 
 <p>Ut vestibulum ac diam ut interdum. Etiam hendrerit metus et eleifend pretium. Nam molestie facilisis neque, quis rhoncus urna vulputate in. Vestibulum quis diam at turpis sodales posuere eget et augue. Integer justo magna, faucibus ut ex eget, aliquet maximus ipsum. Praesent viverra lacus in fermentum porttitor. Curabitur et luctus massa. Morbi pellentesque eros quam, tempus auctor mauris egestas et. Nullam vel tincidunt augue, vulputate condimentum lectus. Morbi aliquam diam leo, et efficitur tortor blandit ut. Vestibulum luctus nibh et elit elementum, eget posuere leo porta.</p>
           </div>
@@ -145,7 +145,7 @@
     </section>
 
     <!-- tour section -->
-    <a id='tour' />
+      <a id='tour'></a>
     <section>
       <div class="container">
         <div class="row">

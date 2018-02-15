@@ -145,7 +145,7 @@
     </section>
 
     <!-- tour section -->
-    <a id='tour' />
+      <a id='tour'></a>
     <section>
       <div class="container">
         <div class="row">

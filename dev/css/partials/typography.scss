@@ -64,9 +64,6 @@ a, p, li, blockquote, code, input, span{
 p{
   margin: 0 0 $paragraph-margin 0;
   line-height:42px;
-  &:last-child{
-    margin: 0 0 0 0;
-  }
 }
 a{
   text-decoration:none;
